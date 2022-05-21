@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    padding: 24px 128px 24px 128px; /* top right bottom left */
+    color: white;
+}
+
+.navbar > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar > div > span {
+    text-transform: uppercase;
+    margin-right: 20px;
+}
