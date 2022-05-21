@@ -2,3 +2,9 @@
   display: flex; /* flexbox */
   flex-direction: column;
 }
+
+.mainBody {
+  background-color: black;
+  padding: 0px 40px;
+  color: white;
+}
