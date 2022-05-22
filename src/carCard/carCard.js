@@ -1,10 +1,11 @@
 import React from "react";
 import "./carCard.css";
+import { Link } from "react-router-dom";
 
 // props => properties => key={value} pairs
 export default function CarCard(props) {
     return (
-        <div className="carCard">
+        <Link to={`/car-details-page/${props.id}`} className="carCard">
             {/* Image */}
             <div className="">
                 <img src={props.imageUri}/>
@@ -20,6 +21,6 @@ export default function CarCard(props) {
                     <strong>View car</strong>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }

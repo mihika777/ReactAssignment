@@ -39,7 +39,7 @@ export default function LandingPage () {
                     {/* Props or properties. name, price, imageUri */}
                     {/* <ComponentName property1={value1} property2={value2} ..../> */}
                     {
-                        cars.map((car) => <CarCard name={car.name} price={car.price} imageUri={car.imageUri} />)
+                        cars.map((car) => <CarCard id={car.id} name={car.name} price={car.price} imageUri={car.imageUri} />)
                     }
                 </div>
             </div>
