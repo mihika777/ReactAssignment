@@ -14,8 +14,8 @@ export default function CarCard(props) {
             {/* Card details */}
             <div className="carDetails">
                 <div className="carName">
-                    <span><strong>{props.name}</strong></span>
-                    <span>{props.price} crore onwards</span>
+                    <span style={{fontSize: "20px"}}><strong>{props.name}</strong></span>
+                    <span style={{fontSize: "12px"}}>{props.price} crore onwards</span>
                 </div>
                 <div className="carDetailsRight">
                     <strong>View car</strong>

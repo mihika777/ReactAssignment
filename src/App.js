@@ -10,6 +10,8 @@ import {
 } from "react-router-dom";
 import LandingPage from './landingPage/landingPage';
 import CarListing from './carListing/carListing';
+import BookingForm from './bookingForm/bookingForm';
+import BookingConfirmation from './bookingConfirmation/bookingConfirmation';
 
 function App() {
   return (
@@ -26,6 +28,10 @@ function App() {
               <Route path=":carId" element={<CarDetailsPage/>}/>
             </Route>
             <Route path= "list-cars" element={<CarListing/>}> </Route>
+            <Route path ="booking-form">
+              <Route path=":carId" element={<BookingForm/>}/>
+            </Route>
+            <Route path="booking-confirmation" element={<BookingConfirmation/>}/>
           </Routes>
       </div>
 

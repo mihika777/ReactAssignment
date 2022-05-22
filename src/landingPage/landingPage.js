@@ -5,6 +5,7 @@ import carsData from "../cars.json";
 import { Link } from 'react-router-dom';
 // carsData = [{name, price, imageUri}, {..}, {..}, {..}];
 
+//TODO: Filter Car-types using the accordian 
 export default function LandingPage () {
     const [cars, setCars] = useState([]); // [] => empty array
     // const [value, setterFunction] = useState(initialValue);

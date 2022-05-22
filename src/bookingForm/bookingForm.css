@@ -1,0 +1,62 @@
+.bookingForm{
+    background-color: white;
+    color: black;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.bookingFormColumn {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    padding: 32px;
+}
+.heading{
+    font-size: 32px;
+}
+
+.carName {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.specs {
+    margin-top: 32px;
+}
+.spec {
+    display: flex;
+    flex-direction: column;
+}
+
+.specKey {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.specValue {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.inputField {
+    padding: 12px 18px;
+    margin-top: 8px;
+}
+
+.submitButton {
+    padding: 20px;
+    background-color: brown;
+    color: white;
+    width: 200px;
+    margin-top: 24px;
+    cursor: pointer;
+}

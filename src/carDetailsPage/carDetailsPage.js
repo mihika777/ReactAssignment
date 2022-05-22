@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./carDetailsPage.css";
 import carsData from "../cars.json";
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 function CarDetailsPage(props){
     const [carDetails, setCarDetails] = useState(null);
@@ -42,7 +42,7 @@ function CarDetailsPage(props){
                     <div className='cost'><span>Cost</span> <span>{carDetails?.price} lakh</span></div>
 
                     {/* Button */}
-                    <button className='bookNowButton'>BOOK NOW</button>
+                    <Link to={`/booking-form/${carDetails?.id}`}><button className='bookNowButton'>BOOK NOW</button></Link>
                 </div>
             </div>
         </div>
