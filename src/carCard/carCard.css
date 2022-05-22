@@ -1,0 +1,19 @@
+.carCard {
+    display: flex;
+    flex-direction: column;
+    width: 278px;
+    height: 492px;
+    border: 1px solid lightgray;
+}
+
+.carDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.carName {
+    display: flex;
+    flex-direction: column;
+}

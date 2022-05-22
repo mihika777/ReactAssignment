@@ -38,3 +38,37 @@
     background-color: brown;
     color: white;
 }
+
+.featuredCars {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 64px 48px 64px 48px;
+    color: black;
+}
+
+.featuredCarsTitle {
+    font-size: 32px;
+    margin-bottom: 48px;
+}
+
+.featuredCarsRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rowJustifySpaceBetween {
+    justify-content: space-between;
+}
+
+.featuredCarsTabs {
+    background-color: lightgray;
+    padding: 12px 0px;
+
+}
+.accordianTab {
+    margin: 12px 36px 12px 36px;
+}
