@@ -1,23 +1,33 @@
 [
     {
+        "id": 1,
         "name" : "BMW X3",
         "price": "69.9",
         "priceDenomination": "lakh",
-        "imageUri": "./carCard/car-card-image1.png"
+        "imageUri": "./carCard/car-card-image1.png",
+        "imageUris": ["./car/car-image1.png", "./car/car-image2.png", "./car/car-image3.png"],
+        "specifications" : [
+            {"key": "Fuel type", "value": "Petrol and Diesel"},
+            {"key": "Engine", "value": "2993 to 2998 C"},
+            {"key": "Torque", "value": "450 to 620 Nm"}
+        ]
     },
     {
+        "id": 2,
         "name" : "XYZ",
         "price": "79",
         "priceDenomination": "crore",
         "imageUri": "./carCard/car-card-image1.png"
     },
     {
+        "id": 3,
         "name" : "Swift",
         "price": "7",
         "priceDenomination": "lakh",
         "imageUri": "./carCard/car-card-image1.png"
     },
     {
+        "id": 4,
         "name" : "Bolero",
         "price": "15",
         "priceDenomination": "lakh",

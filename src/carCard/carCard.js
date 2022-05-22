@@ -6,7 +6,7 @@ export default function CarCard(props) {
     return (
         <div className="carCard">
             {/* Image */}
-            <div className="carImage">
+            <div className="">
                 <img src={props.imageUri}/>
             </div>
 

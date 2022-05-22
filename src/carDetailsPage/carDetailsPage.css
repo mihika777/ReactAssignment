@@ -1,0 +1,58 @@
+.carDetailsPage {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 32px 48px 32px 48px;
+}
+
+.carDetailsLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.carImage {
+    height: 440px;
+    width: 580px;
+    margin: 112px 180px;
+}
+
+.carDetailsRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.Specs {
+    margin-top: 54px;
+}
+
+.Spec {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.specKey {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.specValue {
+    font-size: 20px;
+}
+
+.cost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.bookNowButton {
+    color: white;
+    background-color: brown;
+    padding: 18px 32px 18px 32px;
+    margin-top: 20px;
+}

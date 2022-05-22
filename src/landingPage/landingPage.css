@@ -40,9 +40,9 @@
 }
 
 .featuredCars {
-    background-color: white;
     display: flex;
     flex-direction: column;
+    background-color: white;
     padding: 64px 48px 64px 48px;
     color: black;
 }

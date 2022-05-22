@@ -4,7 +4,7 @@ import CarCard from '../carCard/carCard';
 import carsData from "../cars.json";
 // carsData = [{name, price, imageUri}, {..}, {..}, {..}];
 
-export function LandingPage () {
+export default function LandingPage () {
     const [cars, setCars] = useState([]); // [] => empty array
     // const [value, setterFunction] = useState(initialValue);
 
