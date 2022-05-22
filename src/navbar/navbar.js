@@ -5,7 +5,7 @@ export default function NavBar() {
     return (
         <div className="navbar">
             {/* By default imports for images starts from /public */}
-            <img className="logo" src={"./logo/Logo.png"}/> 
+            <img className="logo" src={"/./logo/Logo.png"}/> 
             <div className="navMiddle">
                 <span>New Cars</span>
                 <span>Used Cars</span>

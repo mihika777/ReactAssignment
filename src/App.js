@@ -21,7 +21,10 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<LandingPage/>}/>
-            <Route path="/car-details-page" element={<CarDetailsPage/>}/>
+            <Route path="car-details-page">
+              <Route path=":carId" element={<CarDetailsPage/>}/>
+            </Route>
+            {/* <Route path='/car-details-page/:id' render={(props) => <CarDetailsPage {...props}/>}/> */}
           </Routes>
         </BrowserRouter>
       </div>
