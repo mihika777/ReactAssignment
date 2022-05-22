@@ -3,6 +3,8 @@
     flex-direction: column;
     width: 278px;
     border: 1px solid lightgray;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .carDetails {

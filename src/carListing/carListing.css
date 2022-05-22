@@ -9,8 +9,8 @@
 .carListingRow {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
     margin-bottom: 20px;
 }
 
@@ -24,5 +24,10 @@
 
 }
 .accordianTab {
-    margin: 12px 36px 12px 36px;
+    padding: 12px 36px 12px 36px;
+    cursor: pointer;
+}
+.activeTab {
+    background-color: black;
+    color:white;
 }

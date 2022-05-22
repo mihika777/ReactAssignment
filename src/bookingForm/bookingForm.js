@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./bookingForm.css";
 import carsData from "../cars.json";
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 function BookingForm() {
     const [carDetails, setCarDetails] = useState(null);
@@ -51,6 +51,7 @@ function BookingForm() {
                         ) 
                     }
                 </div>
+                <Link to={`/car-details-page/${carDetails?.id}`} style={{fontSize: "20px"}}><strong>View Details</strong></Link>
 
             </div>
             <div className='bookingFormColumn' style={{marginLeft: "24px", flex: 1}}>

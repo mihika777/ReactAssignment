@@ -15,10 +15,10 @@ export default function CarCard(props) {
             <div className="carDetails">
                 <div className="carName">
                     <span style={{fontSize: "20px"}}><strong>{props.name}</strong></span>
-                    <span style={{fontSize: "12px"}}>{props.price} crore onwards</span>
+                    <span style={{fontSize: "12px", color: "rgba(0, 0, 0, 0.6)"}}>{props.price} crore onwards</span>
                 </div>
                 <div className="carDetailsRight">
-                    <strong>View car</strong>
+                    <img src="/./carCard/Arrow.png" />
                 </div>
             </div>
         </Link>

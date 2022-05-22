@@ -5,6 +5,7 @@ import "./carListing.css";
 
 function CarListing() {
     const [cars, setCars] = useState([]); // [] => empty array
+    const [filter, setFilter] = useState(null);
     // const [value, setterFunction] = useState(initialValue);
 
     // UseEffect is run once when the component is loaded for the first time.
@@ -12,15 +13,24 @@ function CarListing() {
         setCars(carsData);
     }, []);
 
+    useEffect(() => {
+        if (filter === null) {
+            setCars(carsData);
+            return;
+        }
+        // filter() based on a condition, it returns the elments which satisfy the condition.
+        setCars(carsData.filter(c => c.modelType === filter));
+    }, [filter]);
+
     return (
         <div className='carListing'>
             <div className='carListingRow rowJustifySpaceBetween'>
                 <div className='carListingTabs'>
-                   <span className='accordianTab'>View all</span>
-                   <span className='accordianTab'>Sedan</span>
-                   <span className='accordianTab'>SUV</span>
-                   <span className='accordianTab'>Hatchback</span>
-                   <span className='accordianTab'>Coupe</span>
+                   <span onClick={() => setFilter(null)} className={`accordianTab ${filter === null && 'activeTab'}`}>View all</span>
+                   <span onClick={() => setFilter("sedan")} className={`accordianTab ${filter === "sedan" && 'activeTab'}`}>Sedan</span>
+                   <span onClick={() => setFilter("suv")} className={`accordianTab ${filter === "suv" && 'activeTab'}`}>SUV</span>
+                   <span onClick={() => setFilter("hatchback")} className={`accordianTab ${filter === "hatchback" && 'activeTab'}`}>Hatchback</span>
+                   <span onClick={() => setFilter("coupe")} className={`accordianTab ${filter === "coupe" && 'activeTab'}`}>Coupe</span>
                 </div>
             </div>
             <div className='carListingRow'> {cars.length} Total Results </div>

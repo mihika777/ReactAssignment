@@ -24,7 +24,10 @@ export default function Footer() {
                 <span className="footerText">Cookie Policy</span>
             </div>
             <div className="footerColumn">
-            <span className="footerHeading">Connect with us</span>
+                <span className="footerHeading">Connect with us</span>
+                <img className="socialMediaLogo footerText" src={"/./logo/fb.png"}/>
+                <img className="socialMediaLogo footerText" src={"/./logo/twitter.png"}/>
+                <img className="socialMediaLogo footerText" src={"/./logo/insta.png"}/>
             </div>
         </div>
     )

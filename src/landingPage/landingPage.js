@@ -10,9 +10,9 @@ export default function LandingPage () {
     const [cars, setCars] = useState([]); // [] => empty array
     // const [value, setterFunction] = useState(initialValue);
 
-    // UseEffect is run once when the component is loaded for the first time.
+    // UseEffect is run once when the component is loaded/mounted for the first time.
     useEffect(() => {
-        setCars(carsData);
+        setCars(carsData.slice(0, 4)); // Show only the first 4 cars
     }, []);
 
     return (
