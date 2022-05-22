@@ -9,6 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import LandingPage from './landingPage/landingPage';
+import CarListing from './carListing/carListing';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
             <Route path="car-details-page">
               <Route path=":carId" element={<CarDetailsPage/>}/>
             </Route>
-            {/* <Route path='/car-details-page/:id' render={(props) => <CarDetailsPage {...props}/>}/> */}
+            <Route path= "list-cars" element={<CarListing/>}> </Route>
           </Routes>
       </div>
 

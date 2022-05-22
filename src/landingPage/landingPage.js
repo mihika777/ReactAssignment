@@ -2,6 +2,7 @@ import  React, { useEffect, useState } from 'react';
 import "./landingPage.css";
 import CarCard from '../carCard/carCard';
 import carsData from "../cars.json";
+import { Link } from 'react-router-dom';
 // carsData = [{name, price, imageUri}, {..}, {..}, {..}];
 
 export default function LandingPage () {
@@ -33,7 +34,7 @@ export default function LandingPage () {
                         <span className='accordianTab'>Just launched</span>
                         <span className='accordianTab'>Upcoming</span>
                     </div>
-                    <div className='featuredCarsRight'><strong>View all</strong></div>
+                    <div className='featuredCarsRight'><Link to= 'list-cars'><strong>View all</strong></Link></div>
                 </div>
                 <div className='featuredCarsRow'>
                     {/* Props or properties. name, price, imageUri */}

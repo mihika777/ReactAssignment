@@ -1,0 +1,28 @@
+.carListing {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 64px 48px 64px 48px;
+    color: black;
+    width: 100%;
+}
+.carListingRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rowJustifySpaceBetween {
+    justify-content: space-between;
+}
+
+.carListingTabs {
+    background-color: lightgray;
+    padding: 12px 0px;
+
+}
+.accordianTab {
+    margin: 12px 36px 12px 36px;
+}
